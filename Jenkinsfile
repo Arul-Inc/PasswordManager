@@ -40,6 +40,11 @@ pipeline {
     }
 
     post {
+        always {
+            echo "Images Prune"
+            // Cleans dangling images to prevent WSL 2 vhdx growth
+            sh 'docker image prune -f || true'
+        }
         success {
             echo "========================================================"
             echo "SUCCESS: App deployed via Gunicorn to local Kubernetes!"
