@@ -22,6 +22,6 @@ from . import views
 
 urlpatterns = [
     path('', views.home),
-    path('favicon.ico', RedirectView.as_view(url=static('generator/images/favicon_io/favicon.ico'))),
+    path('favicon.ico', RedirectView.as_view(url=static('generator/images/favicon_io/favicon-32x32.png'))),
     path('about/', views.about, name='about'),
 ]
