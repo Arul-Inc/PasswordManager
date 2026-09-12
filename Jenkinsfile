@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = "password-manager:latest"
+        KUBECONFIG = "/var/lib/jenkins/.kube/config"
     }
 
     stages {
