@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 passwordInput.value = "* * * *"; // Clear the text
                 passwordInput.style.color = "#ccc";
                 passwordInput.style.font = "'Courier New', monospace";
-                expiryNote.style.display = "block"; // Show "Expired" note
+               // expiryNote.style.display = "block"; // Show "Expired" note
 
                 // Optional: Disable the copy button
                // document.querySelector(".copy-icon").style.pointerEvents = "none";
