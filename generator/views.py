@@ -10,14 +10,14 @@ def generate_secure_code(mode):
     """
     if mode == 'pin':
         # Generate a 4-digit PIN
-        return ''.join(secrets.choice(string.digits) for _ in range(4))
+        return ''.join(secrets.choice(string.digits) for _ in range(6))
 
     # Password logic: Use a 'Clean' set to avoid confusing characters
     # (Removed: i, l, 1, L, o, O, 0)
     lowercase = "abcdefghjkmnpqrstuvwxyz"
     uppercase = "ABCDEFGHJKMNPQRSTUVWXYZ"
     digits = "23456789"
-    special = "!@#$%^&*"
+    special = "!@#$^*"
 
     all_chars = lowercase + uppercase + digits + special
 
