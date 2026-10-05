@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color:#e5f1e9;
+  background-color: red;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
