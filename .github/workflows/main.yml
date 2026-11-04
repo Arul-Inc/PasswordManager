@@ -17,12 +17,26 @@ jobs:
       # --------------------------------------------------
       - name: Checkout Code
         uses: actions/checkout@v4
+      # 2. Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
 
+      # 3. Verify Python and pip
+      - name: Verify Python and pip
+        run: |
+          python --version
+          python -m pip --version
+
+      # 4. Upgrade pip
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
       # --------------------------------------------------
       # Installing the requirements
       # --------------------------------------------------
       - name: Installing the Dependcies
-        run: pip install -r requirement.txt
+        run: pip install -r PasswordManager/requirements.txt
       # --------------------------------------------------
       # Download Black Duck Bridge CLI
       # --------------------------------------------------
