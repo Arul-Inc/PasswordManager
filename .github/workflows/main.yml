@@ -59,7 +59,7 @@ jobs:
             --stage polaris \
             polaris.serverUrl=$POLARIS_SERVER_URL \
             polaris.accessToken=$POLARIS_ACCESS_TOKEN \
-            polaris.application.name=Test-Arul \
+            polaris.application.name=Manager-Arul-Github \
             polaris.project.name=Github-Project \
             polaris.branch.name=Polaris-testing \
             polaris.assessment.types=SCA,SAST
