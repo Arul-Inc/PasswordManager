@@ -59,9 +59,9 @@ jobs:
             --stage polaris \
             polaris.serverUrl=$POLARIS_SERVER_URL \
             polaris.accessToken=$POLARIS_ACCESS_TOKEN \
-            polaris.application.name=Gaja-Impl \
-            polaris.project.name=githubactions-demo \
+            polaris.application.name=Arul-SAST \
+            polaris.project.name=Arul \
             polaris.branch.name=Polaris-testing \
-            polaris.assessment.types=SCA \
+            polaris.assessment.types=SCA,SAST \
             polaris.waitForScan=true \
             coverity.build.command="mvn clean install -DskipTests"
