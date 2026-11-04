@@ -36,7 +36,7 @@ jobs:
       # Installing the requirements
       # --------------------------------------------------
       - name: Installing the Dependcies
-        run: pip install -r PasswordManager/requirements.txt
+        run: pip install -r requirements.txt
       # --------------------------------------------------
       # Download Black Duck Bridge CLI
       # --------------------------------------------------
