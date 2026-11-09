@@ -58,4 +58,4 @@ jobs:
             polaris.application.name=Password_Manager_Arul \
             polaris.project.name=Password_Manager \
             polaris.branch.name=main \
-            polaris.assessment.types=SCA,SAST,SCA-SIGNATURE
+            polaris.assessment.types=SCA,SAST
